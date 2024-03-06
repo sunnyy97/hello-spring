@@ -29,7 +29,7 @@ public class HelloController {
     }
 
     @GetMapping("hello-api")
-    // @ResponseBody` 를 사용하고, 객체를 반환하면 객체가 JSON으로 변환됨
+    // @ResponseBody 를 사용하고, 객체를 반환하면 객체가 JSON으로 변환됨
     @ResponseBody
     public Hello helloApi(@RequestParam("name") String name) {
         Hello hello = new Hello();
